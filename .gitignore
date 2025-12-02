@@ -1,4 +1,4 @@
-# Python
+# ----------- PYTHON -----------
 __pycache__/
 *.py[cod]
 *.pyo
@@ -6,52 +6,56 @@ __pycache__/
 *.pyc
 *.pkl
 
-# Virtual environments
+# ----------- VIRTUAL ENVIRONMENTS -----------
 venv/
 env/
 .env/
 .venv/
 
-# Jupyter Notebook checkpoints
+# ----------- JUPYTER NOTEBOOK -----------
 .ipynb_checkpoints/
 
-# VSCode
+# ----------- VS CODE / IDEs -----------
 .vscode/
 .history/
+.idea/
+*.code-workspace
 
-# Sistema operacional
+# ----------- SISTEMAS OPERACIONAIS -----------
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Logs e relatórios
+# ----------- LOGS E TEMPORÁRIOS -----------
 *.log
 *.out
 *.tmp
+*.temp
+*.swp
 
-# Arquivos de download ou temporários do bot
+# ----------- DOWNLOADS / ARQUIVOS TEMP DO BOT -----------
 downloads/
 *.crdownload
 *.part
-*.tmp
-*.swp
 
-# Configurações sensíveis
-config/*.json
-config/*.enc
+# ----------- ARQUIVOS SENSÍVEIS (NUNCA VERSIONAR) -----------
+config/configs.json
+config/credenciais.enc
+config/key.key
+config/gerar_credenciais.py
 
-# Selenium / Webdriver temporários
+# ----------- WEBDRIVERS (SELENIUM) -----------
 *.exe
 *.bin
 geckodriver.log
 chromedriver.log
 
-# PyInstaller
+# ----------- PYINSTALLER / BUILD ARTIFACTS -----------
 dist/
 build/
 *.spec
 
-# Coverage / Testing
+# ----------- COVERAGE / TESTING -----------
 .coverage
 htmlcov/
 *.cover
@@ -59,10 +63,9 @@ htmlcov/
 .cache
 nosetests.xml
 pytest_cache/
-*.mochitest
-*.result
 
-# Outros arquivos temporários
+# ----------- OUTROS TEMPORÁRIOS -----------
 *.bak
 *.old
 *.backup
+*.orig
